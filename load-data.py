@@ -15,6 +15,7 @@ plt.imshow(X_train[r], cmap='gray') # Import the image
 plt.show() # Plot the image
 print(f'image classification: {y_train[r]}')
 
+#save data into npy file
 with open('data.npy', 'wb') as f:
     np.save(f, X_train)
     np.save(f, y_train)
